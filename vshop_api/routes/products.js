@@ -8,7 +8,8 @@ const ProductService = require('./services/productService');
 router.get('/get-products/:categoryId', function(req, res, next) {
   
     try{
-        let productsResult = ProductService.getProducts(req.params.categoryId);
+        let productsResult = ProductService.
+            getProducts(req.params.categoryId, req.query);
         
         productsResult
         .then(function(data){
