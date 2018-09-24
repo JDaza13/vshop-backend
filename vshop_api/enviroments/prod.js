@@ -5,7 +5,8 @@ const appVars = {
         'mongodburl': 'mongodb://vshopuser:vshoppass1@ds033196.mlab.com:33196/vshop',
         'dbName': 'vshop',
         'categoriesCol': 'categories',
-        'productsCol': 'products'
+        'productsCol': 'products',
+        'cartCol': 'shopcart'
     }
 }
 

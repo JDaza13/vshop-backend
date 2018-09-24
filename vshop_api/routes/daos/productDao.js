@@ -14,9 +14,14 @@ const connectParser = { useNewUrlParser: true };
 //DAO methods
 const findProducts = function(db, callback, params) {
 
-    let query = {
-        'sublevel_id': params
-    };
+    let query = {};
+    
+    if(Array.isArray(params)){
+        query['_id'] = { $in : params };
+    }
+    else{
+       query.sublevel_id = params;
+    }
 
     const collection = db.collection(productsCollection);
     collection.find(query).toArray(function(err, docs) {
