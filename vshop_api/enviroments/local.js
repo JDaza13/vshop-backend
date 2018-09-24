@@ -4,7 +4,9 @@ const appVars = {
     'DBSettings': {
         'mongodburl': 'mongodb://dbuser:dbpass@db12345.mlab.com:99999/dbName',
         'dbName': 'dbName',
-        'collectionName': 'collectionName'
+        'categoriesCol': 'categoriesColName',
+        'productsCol': 'productsColName',
+        'cartCol': 'cartColName'
     }
 }
 
