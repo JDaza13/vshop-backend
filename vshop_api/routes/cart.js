@@ -67,7 +67,7 @@ router.post('/edit-cart-item/:itemId', function(req, res, next) {
 router.delete('/delete-cart-item/:itemId', function(req, res, next) {
   
   try{
-    let cartItemDeleteResult = CartService.deleteItem(req.params.hotelId);
+    let cartItemDeleteResult = CartService.deleteItem(req.params.itemId);
       
     cartItemDeleteResult
       .then(function(data){
